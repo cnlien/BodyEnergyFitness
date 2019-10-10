@@ -1,0 +1,73 @@
+.list_view {
+
+    ol{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: stretch;
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            padding: 1% 2%;
+            margin: 1%;
+            flex-basis: 300px;
+            flex-grow: 1;
+            border: 1px solid #0933AC;
+            border-radius: 10px;
+
+            .class_name {
+                margin: 0;
+                padding-bottom: 3%;
+                text-transform: uppercase;
+                font-size: 2rem;
+                text-align: center;
+                line-height: 2rem;
+            }
+
+            .healcode-image-area {
+                display: none;
+            }
+
+            .class_description {
+                
+                :first-child {
+                    padding-bottom: 3%;
+
+                    a {
+                        display: block;
+                        padding: 1em 2.5em;
+                        text-align: center;
+                        margin: 0 auto;
+                        background-color: #0933AC;
+                        color: white;
+                        text-transform: uppercase;
+                        text-decoration: none;
+
+                        :hover {
+                            background-color:#4B73AF;
+                        }
+                    }
+                }
+            }
+
+            .class_offered_link a {
+                display: block;
+                padding: 1em 2.5em;
+                text-align: center;
+                margin: 0 auto;
+                background-color: #0933AC;
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+
+                :visited {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}
